@@ -45,4 +45,40 @@ For sharing, they should be given the normal options that you would expect, mess
 I think sharing might be the hardest part.
 
 Now that we have to base idea set up, we now have to think about the backend and retrieving the data.
+
+Essentially, there are two webpages needed for this.
+The first is the login page where you can either create an account or login.
+The second is the actual meme page.
+
+The login page is actually pretty generic, so any tutorial online is there in case you need help.
+But most likely, it will just have two text boxes and two buttons. One for login, and one for sign up.
+User will enter in username and password, and click login.
+What will happen if already in db:
+- The button will fetch from the backend which will search the database for the username and password.
+- If there is a match, then the backend will get all the data saved under the user *** (We need to figure out how to save the data. Because remember, it is the meme itself and a bunch of text.)
+- It will then upload the main webpage with all the memes that the user has
+
+What will happen if not in db:
+- The button will fetch from the backend which will run a search.
+- Once it doesn't find a match, it will return a message to the user that either the username or password is incorrect, and to try again.
+
+Clicking the Sign Up button, it will take them to the sign up page.
+They will make a username and password. It will have a third optional box saying to enter in an email for account recovery. They will have to click a box saying they understand the warning.
+( Lowkey should make a terms and conditions page that says nothing but nonsense. )
+After they confirm everything and press the create account button, it will send a request to the backend to check that no other user has the same username and password.   
+If not, then create the account in db, and then return a success message to the user, and take them to the meme page.
+
+The meme page will have a grid of meme cards. For new users, the only thing there will be a place holder card that only has the image of a plus sign and text saying "Add Meme".
+Once they click it, there will be an upload box where they can upload their meme, and add the necessary information.
+After they click save, it will send a request to the backend which will save the meme card info to the data base under that user.
+Then, the meme page will refresh showing their new meme card and an additional add meme card.
+
+One important feature I would like to add is a search bar where you can either search the title or description of the meme.
+
+Let us first focus on these features. Once I get to the main aspect of the website, I can focus on the email and sharing part.
+
+For now, lets focus on the front end aspect of getting all the visuals in place.
+
+We will start with the main page.
+Create the card boxes. With react, all we have to do is create one component, and then we can just add as many as we want.
 */
