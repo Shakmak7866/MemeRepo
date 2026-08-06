@@ -18,8 +18,9 @@ function App() {
         <div>
           <h1>Get started</h1>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>. And what if I didn't? Thats pretty cool
           </p>
+          <p>I think I have a pretty rough understanding of js, so I can go on to learn react.</p>
         </div>
         <button
           type="button"
