@@ -82,3 +82,18 @@ For now, lets focus on the front end aspect of getting all the visuals in place.
 We will start with the main page.
 Create the card boxes. With react, all we have to do is create one component, and then we can just add as many as we want.
 */
+
+/* 
+8/19/2026
+
+New notes
+- Been looking online for more info and tips about what to do
+- Have to change the backend from flask -> FastAPI
+- Also, we can't store the images directly to the SQL database
+- SQLDatabases can't store images very well due to their size
+- So to fix this, we will instead have a local storage for now
+- Save the images to that local folder, and instead store the url location of the memes in the database
+
+- Also, for now, forget about the backend and just focus on the front end
+
+*/
