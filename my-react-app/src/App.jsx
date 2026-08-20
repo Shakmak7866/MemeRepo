@@ -22,3 +22,6 @@ function App() {
 }
 
 export default App
+
+// Next step is to have this code be in a meme card
+// So the idea is that there will be an upload card, and the upload card when clicked will have a on screen window telling you to upload the image and you can preview it as well.
